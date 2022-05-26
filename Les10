@@ -1,6 +1,6 @@
 using System;
 
-namespace POD_Lesson10
+namespace gladchenko
 {
     class Program
     {
