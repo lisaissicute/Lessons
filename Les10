@@ -108,25 +108,25 @@ FillMatrix(visitat, minValue, maxValue);
             FindMinMaxArr(visitat, ref min, ref max);
             Console.WriteLine($"Минимальный элемент: {min}, максимальный: {max}");
             //Задание 5
-            int[,] yabloko = new int[5, 5];
-            FillMatrix(yabloko, -15, 15);
-            PlaceZero(yabloko);
-            PrintMatrix(yabloko);
+            int[,] ya = new int[5, 5];
+            FillMatrix(ya, -15, 15);
+            PlaceZero(ya);
+            PrintMatrix(ya);
             Console.WriteLine();
             //Задание 6
-            int[,] bulka = new int[3, 4];
-            FillMatrix(bulka, -15, 15);
+            int[,] bu = new int[3, 4];
+            FillMatrix(bu, -15, 15);
             int product;
             Console.WriteLine("Введите столбец: ");
             int m = int.Parse(Console.ReadLine());
-            FindProductOfColumn(bulka, m, out product);
+            FindProductOfColumn(bu, m, out product);
             Console.WriteLine($"Произведение элементов столбца: {product}");
             //Задание 7
             Console.WriteLine("Введите размерность матрицы: ");
             m = int.Parse(Console.ReadLine());
-            int[,] cucumber = new int[m, m];
-            FillMatrix(cucumber, -15, 15);
-            Console.WriteLine("Произведение элементов главной диагонали: " + FindDiagonal(cucumber));
+            int[,] cu = new int[m, m];
+            FillMatrix(cu, -15, 15);
+            Console.WriteLine("Произведение элементов главной диагонали: " + FindDiagonal(cu));
         }
 
         private static void FillMatrix(int[,] matrix, int minValue, int maxValue)
@@ -182,15 +182,15 @@ FillMatrix(visitat, minValue, maxValue);
                 Console.WriteLine();
             }
         }
-        static void FindProductOfColumn(int[,] bulka, int M, out int product)
+        static void FindProductOfColumn(int[,] bu, int M, out int product)
         {
             product = 1;
-            for (int i = 0; i < bulka.GetLength(0); i++)
-                for (int j = 0; j < bulka.GetLength(1); j++)
+            for (int i = 0; i < bu.GetLength(0); i++)
+                for (int j = 0; j < bu.GetLength(1); j++)
                 {
                     if (j == M)
                     {
-                        product = product * bulka[i, j];
+                        product = product * bu[i, j];
                     }
                 }
         }
@@ -198,12 +198,12 @@ FillMatrix(visitat, minValue, maxValue);
         static int FindDiagonal(int[,] cucumber)
         {
             int product = 1;
-            for (int i = 0; i < cucumber.GetLength(0); i++)
-                for (int j = 0; j < cucumber.GetLength(1); j++) 
+            for (int i = 0; i < cu.GetLength(0); i++)
+                for (int j = 0; j < cu.GetLength(1); j++) 
                 {
                     if (i == j)
                     {
-                        product = product * cucumber[i, j];
+                        product = product * cu[i, j];
                     }
                 }
             return product;
