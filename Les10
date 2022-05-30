@@ -97,7 +97,7 @@ namespace gladchenko
             int rows = int.Parse(Console.ReadLine());
             Console.WriteLine("введите кол-во столбцов");
             int columns = int.Parse(Console.ReadLine());
-            int[,] visitat = new int[rows, columns];
+            int[,] gladchenko = new int[rows, columns];
             int minValue = -15;
             int maxValue = 15;
             int min = int.MaxValue;
