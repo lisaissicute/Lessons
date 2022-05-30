@@ -65,7 +65,7 @@ namespace gladchenko
             {
                 for (int j = 0; j < gladchenko.GetLength(1); j++)
                 {
-                    sum2 +=vasitit[i, j];
+                    sum2 +=gladchenko[i, j];
                 }
             }
             Console.WriteLine($"Сумма элементов: {sum2}");
