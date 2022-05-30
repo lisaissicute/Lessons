@@ -51,19 +51,19 @@ namespace gladchenko
             Console.WriteLine();
             //Задание 2
             Console.WriteLine("Введите элементы массива:");
-            int[,] vasitit = new int[2, 3];
+            int[,] gladchenko = new int[2, 3];
             int sum2 = 0;
             for (int i = 0; i < 2; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    vasitit[i,j] = int.Parse(Console.ReadLine());
+                    gladchenko[i,j] = int.Parse(Console.ReadLine());
                 }
             }
 
-            for (int i = 0; i < vasitit.GetLength(0); i++)
+            for (int i = 0; i < gladchenko.GetLength(0); i++)
             {
-                for (int j = 0; j < vasitit.GetLength(1); j++)
+                for (int j = 0; j < gladchenko.GetLength(1); j++)
                 {
                     sum2 +=vasitit[i, j];
                 }
@@ -71,21 +71,21 @@ namespace gladchenko
             Console.WriteLine($"Сумма элементов: {sum2}");
             //Задание 3
             Console.WriteLine("Введите элементы массива: ");
-            int[,] titivas = new int[4, 3];
+            int[,] gladchenko = new int[4, 3];
             int sum3 = 0;
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    titivas[i, j] = int.Parse(Console.ReadLine());
+                    gladchenko[i, j] = int.Parse(Console.ReadLine());
                 }
             }
 
-            for (int i = 0; i < titivas.GetLength(0); i++)
+            for (int i = 0; i < gladchenko.GetLength(0); i++)
             {
-                for (int j = 0; j < titivas.GetLength(1); j++)
+                for (int j = 0; j < gladchenko.GetLength(1); j++)
                 {
-                   if (titivas[i,j] >=0)
+                   if (gladchenko[i,j] >=0)
                     {
                         sum3++;
                     }
