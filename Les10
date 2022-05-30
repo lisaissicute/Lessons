@@ -103,7 +103,7 @@ namespace gladchenko
             int min = int.MaxValue;
             int max = int.MinValue;
 
-Саня, [18.05.2022 21:31]
+
 FillMatrix(visitat, minValue, maxValue);
             FindMinMaxArr(visitat, ref min, ref max);
             Console.WriteLine($"Минимальный элемент: {min}, максимальный: {max}");
